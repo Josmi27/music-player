@@ -28,10 +28,33 @@
 
             <div class="controls">
                 <div><i class="fa-solid fa-backward"></i></div>
-                <div><i class="fa-solid fa-play"></i></div>
+                <div onClick="playPause()"><i class="fa-solid fa-play" id="controlIcon"></i></div>
                 <div><i class="fa-solid fa-forward"></i></div>
             </div>
         </div>
     </div>
+    <script>
+        let progress = document.getElementById("progress");
+        let song = document.getElementById("song");
+        let controlIcon = document.getElementById("controlIcon");
+
+        song.onloadeddata = function(){
+            progress.max = song.duration;
+            progress.value = song.currentTime;
+        }
+
+        function playPause(){
+            if(controlIcon.classList.contains("fa-pause")){
+                song.pause();
+                controlIcon.classList.remove("fa-pause");
+                controlIcon.classList.add("fa-play");
+            }
+            else{
+                song.play();
+                controlIcon.classList.remove("fa-play");
+                controlIcon.classList.add("fa-pause");
+            }
+        }
+    </script>
 </body>
 </html>
