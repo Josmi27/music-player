@@ -14,7 +14,7 @@
     flex-wrap: wrap ;
 }
 .music-player{
-    background: #d68399;
+    background: #865cf1;
     width: 400px;
     padding: 25px 35px;
     text-align: center;
@@ -30,7 +30,7 @@ nav .circle{
     height: 40px;
     line-height: 40px;
     background: #fff;
-    color: #f53192;
+    color: #20b8cf;
     box-shadow: 0 5x 10px rgba(255, 26, 26, 0.22);
 }
 .music-player h1{
@@ -75,12 +75,12 @@ nav .circle{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: #f53192;
+    color: #0b1820;
     box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
     cursor: pointer;
 }
 .controls div:nth-child(2){
     transform: scale(1.5);
-    background: #f53192;
+    background: #0b1820;
     color: #fff;
 }
